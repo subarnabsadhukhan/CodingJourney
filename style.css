@@ -18,10 +18,33 @@ li {
 }
 
 h3+ul>li {
-    font-weight: 600;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+h3+ul>li+ul>li {
+    padding-bottom: 10px;
 }
 
 li a {
     color: inherit;
     text-decoration: none;
+}
+
+li>span,
+li>a>span {
+    font-weight: 600;
+}
+
+li>a {
+    display: inline-flex;
+    flex-direction: column;
+    transition-duration: 0.25s;
+    transition-property: transform;
+}
+
+
+li>a:hover {
+    transform: scale(1.01);
+    font-weight: 500;
 }
